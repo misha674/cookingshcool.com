@@ -1,0 +1,316 @@
+.follow-block {
+	padding: 38px 16px;
+	text-align: center;
+
+
+	.footer-full-width-area & {
+	    width: 100%;
+	    display: block;
+	    text-align: center;
+		@include media-breakpoint-up(xl) {
+		    width: 49%;
+		    display: inline-block;
+		    text-align: right;
+	   		vertical-align: top;	
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		padding: 48px 20px;
+	}
+	@include media-breakpoint-up(md) {
+		padding: 58px 30px;
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 38px 16px;
+	}
+	@include media-breakpoint-up(xl) {
+		padding: 28px 30px 58px;
+	}
+
+	.widget-title {
+		margin: 0 0 1.6em 0;
+
+		.footer-area-wrap &{
+		margin: 2em 0 1.6em 0;
+		}
+
+		.sidebar & {
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+			@media (min-width: 992px) and (max-width: 1200px) {
+				font-size: 17px;
+			}
+		}
+	}
+	.menu-item {
+		margin: 3px;
+
+		a {
+			border: 2px solid;
+			border-radius: 50%;
+			width: 42px;
+			height: 42px;
+			text-align: center;
+
+			&:before {
+				line-height: 38px;
+			}
+
+			@media (max-width: 1400px) {
+				width: 30px;
+				height: 30px;
+
+				&:before {
+					@include font-size(0.6);
+					line-height: 26px;
+				}
+			}
+			@media (min-width: 992px) and (max-width: 1200px) {
+				width: 26px;
+				height: 26px;
+
+				&:before {
+					line-height: 22px;
+				}
+			}
+		}
+
+		.footer-full-width-area & {
+			a {
+				width: 30px;
+				height: 30px;
+
+				&:before {
+					@include font-size(0.625);
+					line-height: 26px;
+				}
+
+				@include media-breakpoint-up(md) {
+					width: 45px;
+					height: 45px;
+
+					&:before {
+						@include font-size(0.9);
+						line-height: 41px;
+					}
+				}
+				@include media-breakpoint-up(xl) {
+					width: 60px;
+					height: 60px;
+
+					&:before {
+						@include font-size(1.25);
+						line-height: 56px;
+					}
+				}
+			}
+		}
+	}
+	.site-footer & {
+		padding: 0;
+	}
+	.subscribe-block + & {
+		.footer-full-width-area & {
+			margin-top: 25px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: 35px;
+			}
+			@include media-breakpoint-up(md) {
+				margin-top: 45px;
+			}
+			@include media-breakpoint-up(lg) {
+				margin-top: 55px;
+			}
+			@include media-breakpoint-up(xl) {
+				margin-top: 0;
+			}
+		}
+	}
+}
+.subscribe-block input[type="email"] {
+  color: $input_subscribe_bg;
+}
+.subscribe-block {
+	padding: 38px 16px 18px;
+	 text-align: center;
+	
+	.footer-full-width-area & {
+    	width: 100%;
+	    display: block;
+	    text-align: center;
+		@include media-breakpoint-up(xl) {
+		    width: 50%;
+		    display: inline-block;
+	    	text-align: left;
+	   		vertical-align: top;	
+		}
+	}
+
+
+	@include media-breakpoint-up(sm) {
+		padding: 48px 20px 28px;
+	}
+	@include media-breakpoint-up(md) {
+		padding: 58px 30px 38px;
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 38px 16px 18px;
+	}
+	@include media-breakpoint-up(xl) {
+		padding: 58px 30px 38px;
+	}
+
+	.site-footer & {
+		padding: 0;
+	}
+
+	.widget-title {
+		margin: 0 0 5px;
+		padding: 31px 0 0 5px;
+
+
+		.sidebar & {
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+			@media (min-width: 992px) and (max-width: 1200px) {
+				font-size: 17px;
+			}
+		}
+
+		.footer-full-width-area & {
+			margin: 0 0 12px;
+		}
+	}
+	&__message {
+		margin: 0 0 5px;
+		text-transform: none;
+
+		.sidebar & {
+			@media (max-width: 1400px) {
+				font-size: 16px;
+			}
+			@media (min-width: 992px) and (max-width: 1200px) {
+				font-size: 12px;
+			}
+		}
+	}
+	&__input-group {
+		padding-top: 0;
+		margin: 0;
+	  	text-align: center;
+
+		@include media-breakpoint-up(sm) {
+			margin: 0 0px;
+		}
+		.footer-full-width-area & {
+			padding-top: 0px;
+
+			@include media-breakpoint-up(sm) {
+				padding-top: 0px;
+			}
+		}
+	}
+	&__input[type='email'] {
+		width: 100%;
+		max-width: none;
+		margin: 0 30px 10px 0;
+	  	padding: 19px 20px 18px;
+	  	font-style: normal;
+
+		&.error {
+			border: 1px solid #fd3c3d;
+			background: #f8d5d5;
+		}
+
+		.sidebar & {
+			@media (max-width: 1400px) {
+				padding-left: 9px;
+				padding-right: 9px;
+				@include font-size(0.9);
+			}
+			@media (min-width: 992px) and (max-width: 1200px) {
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+		}
+
+		.site-footer & {
+			max-width: 150px;
+		  	font-family: Roboto;
+			@include font-size(0.625);
+
+			@include media-breakpoint-up(sm) {
+				max-width: 260px;
+				@include font-size(1);
+			}
+			@include media-breakpoint-up(md) {
+				max-width: 390px;
+			}
+		}
+	}
+	&__submit {
+		width: 100%;
+	  	border-top: none;
+	  	border-right: none;
+	  	border-left: none;
+		border-bottom: 4px solid;
+	  	position: relative;
+
+	  	&:hover{
+		  background: none!important;
+		  &:after {
+			right: -19px;
+			transition: all 1.00s ease;
+		  }
+		}
+	  	&:after {
+		  font: normal 26px/1.5 FontAwesome;
+		  content: "\f105";
+		  position: absolute;
+		  right: -9px;
+		  top: 0;
+		  width: 30px;
+		  height: 30px;
+		  @media (max-width: 360px) {
+				line-height: 1.8;
+		  }
+		}
+
+		.site-footer & {
+			padding: 19px 20px 17px 0;
+			width: auto;
+			@include font-size(0.625);
+
+			@include media-breakpoint-up(sm) {
+				padding: 3px 26px 11px 0px;
+				max-width: 260px;
+				@include font-size(1.625);
+			}
+		}
+	}
+	&__success, &__error {
+		@include font-size(1.125);
+	  	text-align: center;
+	}
+	&__success {
+		color: #4ccb00;
+	}
+	&__error {
+		color: #fd3c3d;
+	}
+}
+
+.follow-block, .subscribe-block {
+	.widget-title {
+		padding: 0;
+		border: none;
+
+		&:before {
+			content: none;
+		}
+	}
+}

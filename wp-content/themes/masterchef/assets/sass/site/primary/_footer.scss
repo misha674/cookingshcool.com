@@ -1,0 +1,225 @@
+.footer {
+	&-container {
+		@include font-size(0.9375);
+		margin: 18px 0 12px;
+		.container & {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+	&-copyright {
+		display: inline-block;
+		margin-bottom: 0.5em;
+	}
+	&-menu {
+		position: relative;
+		display: inline-block;
+		margin-left: 5px;
+		padding-left: 9px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 0;
+			width: 1px;
+			height: 14px;
+		}
+
+		ul {
+			margin: 0;
+
+			li {
+				&:before {
+					content: '/';
+					margin: 0 2px 0 1px;
+				}
+				&:first-child:before {
+					content: none;
+				}
+			}
+		}
+	}
+	&-area.widget-area {
+		padding-top: 2em;
+		padding-bottom: 0;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 2.5em;
+			padding-bottom: 0.2em;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-top: 3.5em;
+			padding-bottom: 1.2em;
+		}
+		@include media-breakpoint-up(xl) {
+			padding-top: 4.8em;
+			padding-bottom: 0;
+		}
+	}
+	&-full-width-area-wrap {
+		overflow: hidden;
+	}
+}
+.footer-container {
+  	color: $color__footer_conteiner;
+}
+.footer-container {
+	.footer-copyright {
+		color: $color_footer;
+	}
+}
+.site-footer {
+	.footer-area-wrap, .footer-container {
+		@media (max-width: 544px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+
+  	.textwidget {
+	  	position: relative;
+	}
+
+	.left-top, .right-top, .right-bottom, .left-bottom {
+	  &:before,
+	  &:after {
+		content: " ";
+		position: absolute;
+		background-color: #fff;
+	  }
+	}
+
+	@media (max-width: 360px) {
+	  .left-top {
+		&:before {
+		  left: 5% !important;
+		}
+		&:after {
+		  left: 5% !important;
+		}
+	  }
+	  .right-top {
+		&:before {
+		  	right: 5% !important;
+
+		}
+		&:after {
+		  	right: 5% !important;
+		}
+	  }
+	  .right-bottom {
+		&:before {
+		  right: 5% !important;
+		}
+		&:after {
+		  right: 5% !important;
+		}
+	  }
+
+	  .left-bottom {
+		&:before {
+		  left: 5% !important;
+		}
+		&:after {
+		  left: 5% !important;
+		}
+	  }
+	}
+
+	.left-top {
+	  &:before {
+		top: 0px;
+		left: 25%;
+		width: 70px;
+		height: 4px;
+		@include media-breakpoint-up(lg) {
+		  width: 219px;
+		}
+	  }
+	  &:after {
+		top: 0px;
+		left: 25%;
+		width: 4px;
+		height: 25px;
+		@include media-breakpoint-up(lg) {
+		  height: 51px;
+		}
+	  }
+	}
+
+	.right-top {
+	  &:before {
+		top: 0px;
+		right: 25%;
+		width: 70px;
+		height: 4px;
+		@include media-breakpoint-up(lg) {
+		  width: 219px;
+		}
+	  }
+	  &:after {
+		top: 0px;
+		right: 25%;
+		width: 4px;
+		height: 25px;
+		@include media-breakpoint-up(lg) {
+		  height: 51px;
+		}
+	  }
+	}
+
+	.right-bottom {
+	  &:before {
+		bottom: -125px;
+		right: 25%;
+		width: 70px;
+		height: 4px;
+		@include media-breakpoint-up(lg) {
+		  bottom: -200px;
+		  width: 219px;
+		}
+	  }
+	  &:after {
+		bottom: -125px;
+		right: 25%;
+		width: 4px;
+		height: 25px;
+		@include media-breakpoint-up(lg) {
+		  bottom: -200px;
+		  height: 51px;
+		}
+	  }
+	}
+
+	.left-bottom {
+	  &:before {
+		bottom: -125px;
+		left: 25%;
+		width: 70px;
+		height: 4px;
+		@include media-breakpoint-up(lg) {
+		  bottom: -200px;
+		  width: 219px;
+		}
+	  }
+	  &:after {
+		bottom: -125px;
+		left: 25%;
+		width: 4px;
+		height: 25px;
+		@include media-breakpoint-up(lg) {
+		  bottom: -200px;
+		  height: 51px;
+		}
+	  }
+	}
+}
+.footer-full-width-area-wrap {
+  padding-bottom: 130px;
+  padding-top: 51px;
+}
+
+@import "footer/layout-default";
+@import "footer/layout-centered";
+@import "footer/layout-minimal";

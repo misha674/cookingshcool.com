@@ -1,0 +1,836 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 08:08:18
+* VERSION: 1.3.40
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.3.24-3+ubuntu18.04.1+deb.sury.org+1 |7.3.17
+OS__________________: Linux                                 |WINNT
+CREATED_____________: 2020-12-14 08:00:54
+WP VERSION__________: 5.6
+DUP VERSION_________: 1.3.40
+DB__________________: 5.7.32
+DB TABLES___________: 14
+DB ROWS_____________: 2,036
+DB FILE SIZE________: 4.42MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.3.17 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache
+DOC ROOT____________: "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://cookschool/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "duparchive"
+SET DIR PERMS_______: 0
+DIR PERMS VALUE_____: 644
+SET FILE PERMS______: 0
+FILE PERMS VALUE____: 755
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/Users/User/OpenServer/domains/localhost/cookSchool/20201212_cookingshcool_[HASH]_20201214080054_archive.daf"
+SIZE________________: 63.69MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+>>> DupArchive Extraction Complete
+
+--------------------------------------
+DUPARCHIVE EXTRACTION STATUS
+--------------------------------------
+Archive extracted with no errors.
+
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 08:08:18 - RUNTIME: 0.0015 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 08:09:42
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.5.62 -- Build Server: 5.7.32
+FILE SIZE:	dup-database__[HASH].sql (1.58MB)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE:	NOT_SET
+NEW SQL FILE:	[C:/Users/User/OpenServer/domains/localhost/cookSchool/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	On
+
+NOTICE: This servers version [5.5.62] is less than the build version [5.7.32].  
+If you find issues after testing your site please referr to this FAQ item.
+https://snapcreek.com/duplicator/docs/faqs-tech/#faq-installer-260-q
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:C:\Users\User\OpenServer\domains\localhost\cookSchool\dup-installer\ctrls\ctrl.s2.dbinstall.php|LINE:393]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_commentmeta` (  `meta_id` bigint(20) unsigned NOT NULL AUTO_IN...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_comments` (  `comment_ID` bigint(20) unsigned NOT NULL AUTO_IN...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [INSERT INTO `wp_duplicator_packages` VALUES (1,'20201212_cookingshcool','b19876f...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_links` (  `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMEN...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_mp_timetable_data` (  `id` int(11) NOT NULL AUTO_INCREMENT,  ...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_options` (  `option_id` bigint(20) unsigned NOT NULL AUTO_INCR...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_postmeta` (  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCRE...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_posts` (  `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,  ...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_term_relationships` (  `object_id` bigint(20) unsigned NOT NUL...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_term_taxonomy` (  `term_taxonomy_id` bigint(20) unsigned NOT N...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_termmeta` (  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCRE...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_terms` (  `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMEN...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_usermeta` (  `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCR...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+	NOTICE: utf8mb4_unicode_520_ci replaced by utf8mb4_unicode_ci in query [CREATE TABLE `wp_users` (  `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,  ...]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+LEGACY COLLATION FALLBACK:
+	Running the following replacements:
+	[{"search":"utf8mb4_unicode_520_ci","replace":"utf8mb4_unicode_ci"}]
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	134
+
+wp_commentmeta: (0)
+wp_comments: (12)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_mp_timetable_data: (0)
+wp_options: (158)
+wp_postmeta: (1239)
+wp_posts: (169)
+wp_term_relationships: (289)
+wp_term_taxonomy: (67)
+wp_termmeta: (0)
+wp_terms: (67)
+wp_usermeta: (21)
+wp_users: (1)
+Removed '37' cache/transient rows
+
+INSERT DATA RUNTIME: 0.4737 sec.
+STEP-2 COMPLETE @ 08:09:43 - RUNTIME: 0.4795 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+htaccess ark file don' exists
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 08:09:52
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "cookingshcool"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/var/www/cookingshcool.com"
+path_new______________: "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+siteurl_______________: "http://cookschool"
+url_old_______________: "http://cookingshcool.com"
+url_new_______________: "http://cookschool"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_mp_timetable_data"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   158][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:  1239][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   169][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   289][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    67][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    67][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    21][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  2:"\/var\/www\/cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  3:"%2Fvar%2Fwww%2Fcookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  4:"\var\www\cookingshcool.com" ======================> "C:/Users/User/OpenServer/domains/localhost/cookSchool"
+	SEARCH  5:"\\var\\www\\cookingshcool.com" ===================> "C:\/Users\/User\/OpenServer\/domains\/localhost\/cookSchool"
+	SEARCH  6:"%5Cvar%5Cwww%5Ccookingshcool.com" ================> "C%3A%2FUsers%2FUser%2FOpenServer%2Fdomains%2Flocalhost%2FcookSchool"
+	SEARCH  7:"//cookingshcool.com" =============================> "//cookschool"
+	SEARCH  8:"\/\/cookingshcool.com" ===========================> "\/\/cookschool"
+	SEARCH  9:"%2F%2Fcookingshcool.com" =========================> "%2F%2Fcookschool"
+	SEARCH 10:"//www.cookingshcool.com" =========================> "//cookschool"
+	SEARCH 11:"\/\/www.cookingshcool.com" =======================> "\/\/cookschool"
+	SEARCH 12:"%2F%2Fwww.cookingshcool.com" =====================> "%2F%2Fcookschool"
+	SEARCH 13:"https://cookschool" ==============================> "http://cookschool"
+	SEARCH 14:"https:\/\/cookschool" ============================> "http:\/\/cookschool"
+	SEARCH 15:"https%3A%2F%2Fcookschool" ========================> "http%3A%2F%2Fcookschool"
+--------------------------------------
+SCANNED:	Tables:14 	|	 Rows:2023 	|	 Cells:11286 
+UPDATED:	Tables:3 	|	 Rows:93 	|	 Cells:95 
+ERRORS:		0 
+RUNTIME:	0.094500 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""cookschool""
+	UPDATE DB_USER ""root""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+[PHP ERR][WARN] MSG:file_get_contents(C:/Users/User/OpenServer/domains/localhost/cookSchool/dup-installer/dup-orig-htaccess__[HASH].txt): failed to open stream: No such file or directory [CODE:2|FILE:C:\Users\User\OpenServer\domains\localhost\cookSchool\dup-installer\classes\class.s3.func.php|LINE:1222]
+
+STEP-3 COMPLETE @ 08:09:52 - RUNTIME: 0.1196 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================

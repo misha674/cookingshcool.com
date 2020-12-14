@@ -1,0 +1,66 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea {
+	padding: $input__indents;
+	@include font-size(1);
+	line-height: 19px;
+	font-style: italic;
+	color: $color__text-input;
+	border: 1px solid $color__border-input_invert;
+	background-color: $color__background-input;
+	-webkit-appearance: none;
+
+	@include placeholder {
+	    color: $color__text-input;
+	}
+
+	@include border-radius();
+	&:focus {
+		outline: none;
+	}
+	@media (max-width: 1400px) {
+		@include font-size(0.9);
+	}
+	&::-webkit-input-placeholder {
+		white-space: nowrap;
+		overflow-wrap: normal;
+	}
+}
+
+select {
+	border: none;
+	-webkit-appearance: menulist;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+	@include border-radius;
+	&:focus {
+		outline: none;
+	}
+}
+
+textarea {
+	width: 100%;
+	min-height: 150px;
+
+	@include resizable(vertical);
+}
+
+::-moz-placeholder { opacity: 1; }
+:-moz-placeholder { opacity: 1; }

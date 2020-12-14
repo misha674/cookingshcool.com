@@ -1,0 +1,31 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@include btn;
+}
+
+// General styles
+.btn {
+	text-decoration: none;
+
+	@include btn;
+	@include border-radius;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&-fullwidth {
+		width: 100%;
+	}
+}
+.tm-posts_item {
+	.btn {
+		i {
+			display: none;
+		}
+	}
+}

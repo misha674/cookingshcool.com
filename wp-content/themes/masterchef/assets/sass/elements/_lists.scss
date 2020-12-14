@@ -1,0 +1,56 @@
+ul, ol {
+	margin: 0 0 1.5em 1em;
+	padding-left:0;
+
+	li{
+		position: relative;
+		margin-bottom: 0.5em;
+	}
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	margin-left: 1.8em;
+	counter-reset: item;
+	list-style: none;
+	
+	> li {
+		padding-left: 0;
+		
+		&:before {
+			content: counter(item, decimal-leading-zero) ". ";
+			counter-increment: item;
+			position: absolute;
+			top: 0;
+			left: -1.8em;
+			font-weight: bold;
+		}
+	}
+}
+
+li > ul,
+li > ol {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* Inline list */
+.inline-list {
+	@include reset-list;
+	li {
+		display: inline-block;
+		vertical-align: top;
+	}
+}

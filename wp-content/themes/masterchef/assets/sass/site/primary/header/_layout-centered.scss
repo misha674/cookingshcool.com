@@ -1,0 +1,52 @@
+.site-header.centered {
+	@include media-breakpoint-up(md) {
+		text-align: center;
+	}
+	.header-container {
+		&__center {
+			flex: 0 1 100%;
+			margin-left: auto;
+			order:1;
+			@include media-breakpoint-up(xl) {
+			}
+		}
+	}
+		
+
+	.social-list {
+		flex: 0 1 100%;
+		text-align: center;
+		@include media-breakpoint-up(xl) {
+		   order: 1;
+		   padding: 0 0 20px 0;
+		   flex: 0 1 20%;
+		   margin-top: 0;
+		   text-align: right;
+		}
+	}
+
+	.site-branding {
+		padding: 35px 0 20px;
+	}
+
+	.main-navigation {
+		padding: 20px 0 19px;
+
+		> .menu {
+			> li {
+				> a {
+					&:before {
+						bottom: -47px;
+					}
+				}
+			}
+		}
+		.sub-menu {
+			padding-top: 19px;
+
+			.sub-menu {
+				padding-top: 0;
+			}
+		}
+	}
+}

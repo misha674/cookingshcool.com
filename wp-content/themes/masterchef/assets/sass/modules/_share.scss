@@ -1,0 +1,45 @@
+.share-btns {
+	&__list {
+		.hentry & {
+			margin-top: 8px;
+			float: right;
+		}
+		.single-post & {
+			float: none;
+			margin-bottom: 1em;
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 0;
+			}
+			@include media-breakpoint-up(xl) {
+				float: left;	
+			}
+		}
+	}
+	&__label {
+		display: block;
+		vertical-align: middle;
+		margin: 0 0 5px 0;
+
+		@include media-breakpoint-up(sm) {
+			display: inline-block;
+			margin: 0 15px 0 0;
+		}
+	}
+	&__item {
+		display: inline-block;
+		margin: 0 0.3em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__link {
+		padding: 0 0.5em;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+
+		@include font-size(0.9375);
+	}
+}

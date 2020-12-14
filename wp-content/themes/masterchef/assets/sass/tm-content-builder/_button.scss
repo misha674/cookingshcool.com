@@ -1,0 +1,39 @@
+#tm_builder_outer_content {
+	.tm_pb_button,
+	button.tm_pb_button,
+	.tm_pb_button_module_wrapper a.tm_pb_button, a.tm_pb_button.tm_pb_more_button{
+		@include font-size(1.625);
+		text-transform: none;
+		padding: 13px 27px;
+	  	background: none;
+
+		&:hover {
+			padding: 13px 27px;
+		}
+		&:after, &:hover:after {
+			content: none;
+		}
+	}
+  	.tm_pb_slider {
+		a.tm_pb_button.tm_pb_more_button{
+		  	margin-top: 0;
+		  	border-top: none;
+		  	border-left: none;
+		  	border-right: none;
+			border-bottom: 4px solid;
+		  	padding: 7px 0px;
+		}
+	}
+	.tm_pb_blog .tm_pb_post .more-link {
+	  	padding: 10px 20px 10px 0;
+   		font-size: 14px;
+	 	text-transform: none;
+   		&:hover {
+		  	padding: 10px 20px 10px 0;
+		}
+		&:after, &:hover:after {
+			content: none;
+		}
+		
+	}
+}

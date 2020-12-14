@@ -1,0 +1,129 @@
+.site-header {
+	margin-bottom: 60px;
+
+	.home & {
+		margin-bottom: 0;
+	}
+}
+.header-container {
+	padding-left: $grid-gutter-width/2;
+	padding-right: $grid-gutter-width/2;
+
+	@media (max-width: 767px) {
+		.header-container_wrap.container {
+			max-width: 100%;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		&.isStuck {
+			position: fixed;
+			z-index: 1000;
+			right: 0;
+			left: 0;
+		}
+	}
+	.container & {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.site-branding {
+		padding: 18px 0 10px;
+
+		order: 0;
+		flex: 0 1 100%;
+		text-align: center;
+	}
+	.social-list {
+		padding: 5px 0;
+		margin: 0;
+		order: 0;
+		flex: 0 1 100%;
+		text-align: center;
+	}
+	.main-navigation {
+		padding: 10px 0 0;
+
+		order: 2;
+		flex: 0 1 100%;
+	}
+
+	&__flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		align-content: stretch;
+		-ms-flex-align: start;
+		align-items: center;
+		@include media-breakpoint-up(xl) {
+			flex-wrap: nowrap;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.site-header .header-container {
+		.main-navigation {
+			@include transition(top 0.75s ease);
+			top: -100px;
+
+			&.isStuck {
+				position: fixed;
+				left: 0;
+				top: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+				width: 100%;
+				z-index: 9999;
+				padding: 15px 0;
+
+				&.has-bar {
+					margin-top: 32px;
+				}
+				.menu {
+					@include make-container-max-widths();
+					justify-content: center;
+					margin-left: auto;
+					margin-right: auto;
+					padding-right: $card-deck-margin / 2;
+					padding-left: $card-deck-margin / 2;
+
+					@include media-breakpoint-up(md) {
+						padding-right: $card-deck-margin-md / 2;
+						padding-left: $card-deck-margin-md / 2;
+					}
+					@include media-breakpoint-up(lg) {
+						padding-right: $card-deck-margin-lg / 2;
+						padding-left: $card-deck-margin-lg / 2;
+					}
+					@include media-breakpoint-up(xl) {
+						padding-right: $card-deck-margin-xl / 2;
+						padding-left: $card-deck-margin-xl / 2;
+					}
+
+					>.menu-item-has-children > ul.sub-menu {
+						padding-top: 15px;
+					}
+					>li >a:before{
+						bottom: -15px;
+					}
+				}
+			}
+		}
+	}
+	.site-header.default .header-container .main-navigation.isStuck .menu {
+		justify-content: flex-start;
+	}
+}
+.header-container {
+	padding-left: 87px;
+}
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/layout-minimal";
+@import "header/top-panel";
+@import "header/logo";

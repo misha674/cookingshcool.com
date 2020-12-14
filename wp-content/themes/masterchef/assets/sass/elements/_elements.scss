@@ -1,0 +1,163 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+blockquote, q {
+	quotes: none;
+
+	&:before,
+	&:after {
+		content: '';
+	}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);
+
+blockquote {
+
+	position: relative;
+	padding: 30px 60px 20px;
+	margin: 0;
+	@include font-size(1.375);
+	line-height: 1.45;
+	font-weight: bold;
+	font-style: italic;
+
+	.single-post & {
+
+	}
+
+	.post_format-post-format-quote &, .single-post & {
+		margin: 0.9em 0 1.36em;
+		padding: 72px 60px 74px 115px;
+
+		&:before {
+			top: 55px;
+			left: 60px;
+		}
+		@media (min-width:768px) and (max-width: 1350px)  {
+		   padding: 95px 20px 74px 20px;
+		   &:before {
+		    top: 55px;
+		    left: 40%;
+		   }
+		  }
+
+		@media (min-width:1350px){
+			padding: 72px 50px 74px 85px;
+				&:before {
+				left: 30px;
+			}
+		}
+		@media (max-width:545px){
+		   padding: 72px 50px 74px 70px;
+		   &:before {
+		    left: 20px;
+		   }
+		  }
+	}
+
+	p {
+		margin: 0;
+		& + p {
+			margin-top: 1em;
+		}
+	}
+	cite {
+		padding-top: 20px;
+		display: block;
+		@include font-size(1.4375);
+		line-height: 1.45;
+		&:before {
+			content: "- ";
+		}
+	}
+	&:before {
+		content: "\201C";
+		position: absolute;
+		font: bold 4.54em/0.7 'Playfair Display', serif;
+		top: 10px;
+		left: 0px;
+	}
+
+	@media (max-width: 544px) {
+		padding: 30px 25px 35px 60px;
+		@include font-size(1.1);
+
+		&:before {
+			top: 15px;
+			left: 15px;
+		}
+		cite {
+			@include font-size(1);
+		}
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin: 2.7em 0;
+}
+
+hr.marker{
+  &:before {
+	content: " ";
+	position: absolute;
+	height: 5px;
+	width: 60px;
+	margin-top: -2px;
+	background-color: #000000;
+  }
+}
+
+.main-title {
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0 0 1.3em;
+
+		@include media-breakpoint-up(sm) {
+			margin: 0 0 1.5em;
+		}
+		@include media-breakpoint-up(md) {
+			margin: 0 0 1.7em;
+		}
+		@include media-breakpoint-up(lg) {
+			margin: 0 0 2em;
+		}
+		@include media-breakpoint-up(xl) {
+			margin: 0 0 2.333em;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+@import "totop-button";

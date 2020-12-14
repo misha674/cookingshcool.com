@@ -1,0 +1,139 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	overflow: hidden;
+	margin-top: 1.75em;
+
+	@include media-breakpoint-up(md) {
+		margin-top: 3.25em;
+	}
+	.nav-links {
+		@include media-breakpoint-up(md) {
+			display: flex;
+			justify-content: space-between;
+	}
+	}
+	.nav-previous, .nav-next {
+		overflow: hidden;
+		display: block;
+		margin: 1em 0;
+		
+		@include media-breakpoint-up(md) {
+			margin: 0;
+			width: 48.5%;
+			display: flex;
+		}
+		a {
+			position: relative;
+			padding: 27px 15px;
+			border: 2px solid;
+			display: block;
+			width: 100%;
+			text-transform: uppercase;
+
+			&:before {
+				@include transition(all 0.3s ease);
+				content: '';
+				position: absolute;
+				top: 50%;
+				margin-top: -25px;
+				width: 50px;
+				height: 50px;
+				text-align: center;
+
+				@include material-icon();
+				font-size: 34px;
+				line-height:50px;
+			}
+		}
+		.meta-nav {
+			
+		}
+	}
+	.nav-previous {
+		text-align: left;
+
+		> a {
+			padding-left: 90px;
+
+			&:before {
+				content: '\E408';
+				left: 0;
+			}
+		}
+	}
+	.nav-next {
+		text-align: right;
+
+		> a {
+			padding-right: 90px;
+
+			&:before {
+				content: '\E409';
+				right: 0;
+			}
+		}
+	}
+}
+
+.pagination {
+	padding: 30px 0;
+	margin: 0 0 100px;
+	border-top: 2px solid #f5a503;
+	border-bottom: 2px solid #f5a503;
+	text-align: center;
+
+	.card-columns + & {
+		margin-top: 0;
+	}
+}
+.page-numbers {
+	display: inline-block;
+	@include font-size(1.25);
+	line-height: 2.6;
+	margin: 0 2px;
+	padding: 0 8px;
+	height: 2.6em;
+	text-align: center;
+	text-decoration: none;
+
+	@include border-radius;
+	&.dots {
+		min-width: 2em;
+		border: none;
+		background-color: transparent;
+	}
+	&.next,
+	&.prev {
+		width: 2.6em;
+		border: none;
+		padding: 0;
+		margin: 0 10px;
+		i {
+			@include font-size(2.125);
+			vertical-align: middle;
+		}
+	}
+}
+
+
+.page-links {
+	clear: both;
+	margin: 0 0 1em;
+	&__title {
+		margin-right: 5px;
+	}
+	a,
+	> .page-links__item {
+		line-height: 3;
+		display: inline-block;
+		min-width: 3em;
+		height: 3em;
+		margin: 0 5px 5px 0;
+		text-align: center;
+		border: 1px solid $color__background-hr;
+	}
+	a {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,35 @@
+#tm_builder_outer_content {
+	.tm_pb_map {
+		height: 300px;
+
+		@include media-breakpoint-up(sm) {
+			height: 340px;
+		}
+		@include media-breakpoint-up(md) {
+			height: 440px;
+		}
+		@include media-breakpoint-up(lg) {
+			height: 540px;		
+		}
+		@include media-breakpoint-up(xl) {
+			height: 640px;			
+		}
+
+		.infowindow {
+			color: $infowindow;
+		}
+	}
+	.tm_pb_column_2_3 .tm_pb_map {
+		height: 530px;
+	}
+
+	.tm_pb_column_1_2 .tm_pb_map,
+	.tm_pb_column_3_8 .tm_pb_map {
+		height: 420px;
+	}
+
+	.tm_pb_column_1_3 .tm_pb_map,
+	.tm_pb_column_1_4 .tm_pb_map {
+		height: 310px;
+	}
+}

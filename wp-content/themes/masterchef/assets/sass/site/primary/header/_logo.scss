@@ -1,0 +1,17 @@
+.site-logo {
+	margin: 0;
+
+	&__link {
+		text-decoration: none;
+		line-height: 1;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+		&:focus {
+			outline: none;
+		}
+		img {
+			vertical-align: middle;
+		}
+	}
+}

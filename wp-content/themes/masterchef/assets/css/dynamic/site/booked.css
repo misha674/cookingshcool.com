@@ -1,0 +1,47 @@
+/* #Booked */
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar thead tr {
+	background:	$regular_accent_color_1;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar thead .backToMonth {
+	color: @alpha($regular_accent_color_2, 50);
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar thead .backToMonth:hover {
+	color: @alpha($regular_accent_color_2, 80);
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar thead tr.days th {
+	color: $regular_accent_color_1 !important;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.week td .tooltipster {
+	border-color: $regular_accent_color_1;
+	color: $regular_accent_color_1;
+	background-color: transparent;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.week td .tooltipster span {
+	color: $regular_accent_color_1;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.week td:hover .tooltipster {
+	border-color: $regular_text_color;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.week td:hover .tooltipster span {
+	color: $regular_text_color;
+}
+
+.widget_booked_calendar .booked-calendar tbody .number {
+	color: $regular_accent_color_2;
+}
+.footer-area-wrap .widget_booked_calendar .booked-calendar tbody .number {
+	color: $regular_accent_color_3;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.week td.active {
+	border-color: @alpha($regular_accent_color_2, 45);
+	background-color: $invert_accent_color_2;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.week td.active .number {
+	color: $regular_accent_color_2 !important;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.entryBlock {
+	background-color: $invert_accent_color_2;
+}
+.widget_booked_calendar .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td {
+	border-color: @alpha($regular_accent_color_2, 45);
+}

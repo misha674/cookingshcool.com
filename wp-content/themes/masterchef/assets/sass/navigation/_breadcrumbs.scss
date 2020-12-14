@@ -1,0 +1,58 @@
+.breadcrumbs {
+	position: relative;
+	margin: 0 0 50px;
+
+	&__title {
+
+		.page-title {
+			margin: 0;
+
+			&:after {
+				@media (max-width: 992px) {
+					content: '';
+					display: block;
+					width: 50px;
+					height: 1px;
+					margin: 0.5em 0;
+				}
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			float: left;
+			border-right: 1px solid;
+			border-bottom: none;
+			margin-right: 1.5em;
+			padding-right: 1.5em;
+
+			&:after {
+				content: none;
+			}
+		}
+	}
+	&__items {
+		float: left;
+	}
+	&__browse {
+		float: left;
+		margin-right: .5em;
+	}
+	&__wrap {
+		float: left;
+		margin: 0;
+		@include media-breakpoint-up(lg) {
+			margin: .25em 0;
+		}
+	}
+	&__item {
+		float: left;
+		&-sep {
+			margin: 0 .4em;
+		}
+		&-link {
+			text-decoration: none;
+		}
+	}
+  	&__item-target {
+	}
+}

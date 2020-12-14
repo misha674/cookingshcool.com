@@ -1,0 +1,131 @@
+.comments {
+	&-area {
+		position: relative;
+		margin-bottom: 1em;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 2em;
+		}
+	}
+	&-title {
+		margin: 0;
+		padding: 4.7%;
+	}
+}
+
+.comment {
+	&-list {
+		margin: 0;
+		list-style: none;
+		.children {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			.comment-body {
+				padding-left: 9.4%;
+			}
+			.children .comment-body {
+				padding-left: 14.1%;
+			}
+			.children .children .comment-body {
+				padding-left: 18.8%;
+			}
+			.children .children .children .comment-body {
+				padding-left: 23.5%;
+			}
+			.children .children .children .children .comment-body {
+				padding-left: 28.2%;
+			}
+			.children .children .children .children .children .comment-body {
+				padding-left: 32.9%;
+			}
+			.children .children .children .children .children .children .comment-body {
+				padding-left: 37.6%;
+			}
+			.children .children .children .children .children .children .children .comment-body {
+				padding-left: 42.3%;
+			}
+			.children .children .children .children .children .children .children .children .comment-body {
+				padding-left: 47%;
+			}
+			.children .children .children .children .children .children .children .children .children .comment-body {
+				padding-left: 51.7%;
+			}
+		}
+		.comment {
+			margin: 0;
+
+			&:before {
+				content: none;
+			}
+		}
+	}
+	&-content {
+		a {
+			word-wrap: break-word;
+		}
+	}
+	&-body {
+		padding: 30px 4.7% 15px;
+
+		&__holder {
+			display: flex;
+		}
+		&__comment {
+			align-self: center;
+		}
+		&__author {
+			float: left;
+			margin: 0 15px 10px 0;
+
+			@include media-breakpoint-up(lg) {
+				margin: 0 35px 15px 0;
+			}
+		}
+		.avatar {
+			border-radius: 50%;
+			width: 100px;
+
+			@include media-breakpoint-up(lg) {
+				width: auto;
+			}
+		}
+		.fn {
+			margin-right: 10px;
+			font-weight: normal;
+		}
+		.reply {
+			position: absolute;
+			z-index: 9;
+			top: 30px;
+			right: 30px;
+			transition: all 0.35s ease;
+		}
+	}
+	&-reply-link {
+		font-size: 22px;
+		.material-icons {
+			font-size: inherit;
+		}
+	}
+	&-meta {
+		@include font-size(0.9375);
+		margin-bottom: 10px;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 23px;
+		}
+	}
+	&-date {
+		display: inline-block;
+	
+		&__time {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
+.bypostauthor {
+	display: block;
+}

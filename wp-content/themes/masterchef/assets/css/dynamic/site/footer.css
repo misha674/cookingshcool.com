@@ -1,0 +1,22 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}
+.footer-area-wrap ul li a {
+	color: $invert_text_color;
+}
+.footer-area-wrap ul li a:hover {
+	color: $invert_link_color;
+}
+.site-info a:hover {
+	color: $regular_accent_color_3;
+}
+.footer-full-width-area-wrap {
+	background-color: $header_bg_color;
+}
+.footer-full-width-area-wrap h1 {
+	color: $regular_accent_color_3;
+}

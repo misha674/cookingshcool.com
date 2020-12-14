@@ -1,0 +1,39 @@
+#tm_builder_outer_content {
+	.tm_pb_toggle {
+		padding: 0;
+		margin-bottom: 20px;
+		border: none;
+
+		.tm_pb_toggle_title {
+			@include transition(all 0.75s ease);
+
+			margin: 0;
+			padding: 14px 10px 14px 50px;
+
+			&:before {
+				left: 10px;
+				@include material-icon();
+				@include font-size(2.125);
+				line-height: 1.1;
+			}
+		}
+		&.tm_pb_toggle_close{
+			.tm_pb_toggle_title {
+				&:before {
+					content: '\E315';
+				}
+			}
+		}
+		&.tm_pb_toggle_open{
+			.tm_pb_toggle_title {
+				&:before {
+					content: '\E313';
+				}
+			}
+		}
+		.tm_pb_toggle_content {
+			overflow: hidden;
+			padding: 37px 50px 13px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.site-header.default {
+	.header-container__flex {
+		flex-wrap:wrap;
+	}
+	.main-navigation {
+		@include media-breakpoint-up(md) {
+			padding: 10px 0 28px;
+			text-align: left;
+			order: 3;
+			flex: 0 1 100%;
+
+			> .menu {
+				justify-content: flex-start;
+				> li {
+					> a {
+						&:before {
+							bottom: -28px;
+						}
+					}
+					&:first-child {
+						padding-left: 0;
+					}
+				}
+			}
+			.sub-menu {
+				padding-top: 28px;
+
+				.sub-menu {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+	.site-branding {
+		@include media-breakpoint-up(md) {
+			margin: 0;
+			text-align: left;
+			order: 1;
+			flex: 0 1 50%;
+		}
+	}
+	.social-list {
+		@include media-breakpoint-up(md) {
+			text-align: right;
+			padding-top: 23px;
+			order: 2;
+			flex: 0 1 50%;
+		}
+	}
+}

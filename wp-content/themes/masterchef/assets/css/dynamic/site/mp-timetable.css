@@ -1,0 +1,36 @@
+.mptt-shortcode-wrapper .mptt-shortcode-table thead tr.mptt-shortcode-row th {
+	font-family: @font_family($button_font_family);
+	font-weight: $button_font_weight;
+	background-color: $invert_accent_color_1;
+}
+.single-mp-event .mptt-main-wrapper .mptt-content {
+	background-color: $regular_accent_color_3;	
+}
+
+.mptt-sidebar .mptt-widget p {
+	color: $regular_text_color;
+}
+
+.mptt-container .widgettitle {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: @font_size($h4_font_size, multiple, ceil, 0.8)px;
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+	color: $regular_h4_color;
+}
+.mptt-container .widgettitle:before {
+	background-color: $regular_accent_color_1;
+}
+
+#content .upcoming-events-widget .mptt-widget.events-list .event {
+	border-color: $regular_accent_color_1;
+	color: $regular_text_color;
+	background-color: $invert_accent_color_1;
+}
+
+.mptt-widget.events-list .column-title:before, .mptt-widget.events-list .timeslot:before,
+.single .events-list .event:before {
+	color: $regular_accent_color_1;
+}

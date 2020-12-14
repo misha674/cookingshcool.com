@@ -1,0 +1,95 @@
+#sidebar {
+	overflow: hidden;
+	@media (max-width: 980px) {
+	  padding-top: 20px;
+	}
+}
+
+.widget {
+	&-title {
+		margin: 0 0 1.625em 0;
+		position: relative;
+		padding: 2.2em 0 0 0;
+		border-top: 2px solid $color__border-input_invert;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 56px;
+			height: 6px;
+			top: -2px;
+			left: 0;
+		}
+
+		.footer-area &, .tm_pb_widget_area & {
+			padding: 0;
+			border: none;
+
+			&:before {
+				content: none;
+			}
+		}
+		.tm_pb_widget_area & {
+			text-align: center;
+			margin-bottom: 2.333em;
+		}
+		.footer-full-width-area & {
+			&:after {
+				content: none;
+			}
+		}
+	}
+	& + .widget {
+		margin-top: 1em;
+
+		@include media-breakpoint-up(md) {
+			margin-top: 2em;
+		}
+	}
+	.sidebar &,
+	.sidebar-secondary & {
+		margin-bottom: 50px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 80px;
+		}
+	}
+	.footer-area & {
+		margin-top: 0;
+		margin-bottom: 2em;
+
+
+		p{
+			margin-bottom: 0.5em;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+
+			li {
+				margin-bottom: 0.75em;
+			}
+		}
+	}
+	.footer-full-width-area & {
+		margin-top: 0.75em;
+		margin-bottom: 0.75em;
+
+		@include media-breakpoint-up(md) {
+			margin-top: 1.75em;
+			margin-bottom: 1.75em;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: 2.75em;
+			margin-bottom: 2.75em;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
+	}
+	select {
+		max-width: 248px;
+		width: 100%;
+	}
+}

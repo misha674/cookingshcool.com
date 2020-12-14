@@ -1,0 +1,182 @@
+#tm_builder_outer_content {
+	.tm_pb_title_holder {
+	  	position: relative;
+	  	overflow: visible !important;
+	  	padding-bottom: 15px;
+		h1,h2,h3,h4,h5,h6 {
+			margin: 0;
+		}
+		h1 {
+			@include font-size(2.5);
+			line-height: 1.3;
+
+			@include media-breakpoint-up(sm) {
+				@include font-size(3.5);
+				line-height: 1.1;
+			}
+			@include media-breakpoint-up(md) {
+				@include font-size(4.25);
+			}
+			@include media-breakpoint-up(lg) {
+				@include font-size(6.25);
+				line-height: 1;
+			}
+		}
+		h2 {
+			@include font-size(1.5);
+			line-height: 1.3;
+
+			@include media-breakpoint-up(sm) {
+				@include font-size(1.75);
+				line-height: 1.1;
+			}
+			@include media-breakpoint-up(md) {
+				@include font-size(2);
+			}
+			@include media-breakpoint-up(lg) {
+				@include font-size(2.25);
+				line-height: 1;
+			}
+
+			&:before, &:after {
+				content: none;
+			}
+		}
+
+		&:before {
+		  background-image: url(assets/images/header_icon.png);
+		  content: "";
+		  display: block;
+		  width: 45px;
+		  height: 45px;
+		  position: absolute;
+		  top: -20px;
+		  left: 47.5%;
+		  @media (max-width: 360px) {
+			left: 44%;
+		  }
+		}
+	}
+
+  	.left-top, .right-top, .right-bottom, .left-bottom {
+	  &:before,
+	  &:after {
+		content: " ";
+		position: absolute;
+		background-color: #fff;
+	  }
+	}
+
+  	.left-top {
+	  &:before {
+		top: 0px;
+		left: 0px;
+		width: 100px;
+		height: 4px;
+
+		@include media-breakpoint-up(sm) {
+		  width: 270px;
+		}
+		@include media-breakpoint-up(lg) {
+		  width: 300px;
+		}
+		@include media-breakpoint-up(xl) {
+		  width: 415px;
+		}
+	  }
+	  &:after {
+		top: 0px;
+		left: 0px;
+		width: 4px;
+		height: 52px;
+	  }
+	}
+
+	.right-top {
+	  &:before {
+		top: 0px;
+		right: 0px;
+		width: 100px;
+		height: 4px;
+
+		@include media-breakpoint-up(sm) {
+		  width: 270px;
+		}
+		@include media-breakpoint-up(lg) {
+		  width: 300px;
+		}
+		@include media-breakpoint-up(xl) {
+		  width: 415px;
+		}
+	  }
+	  &:after {
+		top: 0px;
+		right: 0px;
+		width: 4px;
+		height: 52px;
+	  }
+	}
+
+	.right-bottom {
+	  &:before {
+		bottom: 0px;
+		right: 0px;
+		width: 20%;
+		height: 4px;
+		@include media-breakpoint-up(sm) {
+		  width: 20%;
+		}
+		@include media-breakpoint-up(xl) {
+		  width: 29%;
+		}
+	  }
+	  &:after {
+		bottom: 0px;
+		right: 0px;
+		width: 4px;
+		height: 52px;
+	  }
+	}
+
+	.left-bottom {
+	  &:before {
+		bottom: 0px;
+		left: 0px;
+		width: 20%;
+		height: 4px;
+		@include media-breakpoint-up(sm) {
+		  width: 20%;
+		}
+		@include media-breakpoint-up(xl) {
+		  width: 29%;
+		}
+	  }
+	  &:after {
+		bottom: 0px;
+		left: 0px;
+		width: 4px;
+		height: 52px;
+	  }
+	}
+
+  	.tm_pb_first_btn {
+	  bottom: 10px;
+	  left: 42%;
+	  position: absolute;
+	  @media (max-width: 1500px) {
+		left: 40.1%;
+	  }
+	  @media (max-width: 1400px) {
+		left: 39%;
+	  }
+	  @media (max-width: 980px) {
+		left: 31%;
+	  }
+	  @media (max-width: 375px) {
+		font-size: 0.625rem !important;
+	  }
+	  @media (max-width: 320px) {
+		left: 28%;
+	  }
+	}
+}

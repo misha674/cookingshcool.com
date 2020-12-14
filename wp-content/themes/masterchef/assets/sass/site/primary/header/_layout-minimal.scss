@@ -1,0 +1,44 @@
+.site-header.minimal {
+	.site-branding {
+		@include media-breakpoint-up(md) {
+			padding: 5px 0 5px;
+
+			order: 0;
+			flex: 0 1 auto;
+			text-align: left;
+		}
+	}
+	.social-list {
+		@include media-breakpoint-up(md) {
+			order: 2;
+			flex: 0 1 auto;
+			text-align: left;
+		}
+	}
+	.main-navigation {
+		> .menu {
+			> li {
+				> a {
+					&:before {
+						bottom: -19px;
+					}
+				}
+			}
+		}
+		.sub-menu {
+			padding-top: 19px;
+
+			.sub-menu {
+				padding-top: 0;
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			padding: 20px 0 19px;
+		}
+		@include media-breakpoint-up(xl) {
+			order: 1;
+			flex: 0 1 50%;
+		}
+	}
+}

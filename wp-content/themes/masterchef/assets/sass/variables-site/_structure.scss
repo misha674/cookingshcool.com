@@ -1,0 +1,21 @@
+// Options
+$enable-rounded: false !default;
+
+
+
+$border__radius: 4px;
+$box__shadow: 0 5px 32px rgba(103,122,141,.17);
+$box__shadow_mobile: 0 3px 15px rgba(103,122,141,.17);
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+$input__indents: 15px 20px 16px;
+
+$button__indents: 16px 26px;
+$button__border-radius: $border__radius;
+$button__border: 2px solid;
+$button__box-shadow: none;
+$black_171717: #171717;
+
+$embed__ratio: 56.25%;  //  thumbnail height / thumbnail width

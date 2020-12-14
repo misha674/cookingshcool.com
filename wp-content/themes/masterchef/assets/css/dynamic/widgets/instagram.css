@@ -1,0 +1,6 @@
+.instagram__cover {
+	background-color: @alpha( $top_panel_bg, 35 );
+}
+.instagram__cover::before {
+	background-color: $regular_accent_color_3;
+}

@@ -1,0 +1,106 @@
+#tm_builder_outer_content {
+	.tm_pb_pricing {
+		@media (min-width: 768px) and (max-width: 1200px) {
+			margin-left: -35px;
+			margin-right: -35px;
+		}
+	}
+	.tm_pb_pricing_table {
+		padding: 35px 10px;
+		.tm_pb_button {
+			font-size: 15px;
+			padding:13px 27px;
+		}
+
+		@media (max-width: 768px) {
+			width: auto !important;
+			float: none;
+			margin: 0 5%;
+
+			&.tm_pb_featured_table {
+				margin: 0;
+			}
+		}
+
+		&.tm_pb_featured_table {
+			padding: 65px 0;
+		}
+		.tm_pb_pricing_heading {
+			padding: 0;
+			margin: 0 0 35px;
+			text-transform: uppercase;
+			background: none;
+
+			.tm_pb_pricing_title {
+				padding: 0;
+				margin: 0;
+
+				&:before, &:after {
+					content: none;
+				}
+			}
+			.tm_pb_best_value {
+				margin-top: 8px;
+			}
+		}
+		.tm_pb_pricing_content_top {
+			padding: 0;
+			margin-bottom: 28px;
+			border: none !important;
+
+			.tm_pb_tm_price {
+				@media (min-width: 768px) and (max-width: 1200px) {
+					.tm_pb_dollar_sign {
+						position: static;
+						margin: 0;
+					}
+					.tm_pb_sum {
+						display: block;
+					}
+				}
+			}
+		}
+		.tm_pb_pricing_content {
+			position: relative;
+			padding: 22px 0 18px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 90px;
+				height: 2px;
+				top: 0;
+				left: 50%;
+				margin-left: -45px;
+				background-color: #fff;
+			}
+			h5 {
+				margin: 0 0 18px;
+			}
+			.tm_pb_pricing {
+				li {
+					padding: 0;
+					margin: 0 0 0.35em;
+					p {
+						line-height: 1.5em;
+					}
+				}
+			}
+			ul {
+				margin: 0;
+
+				li {
+					list-style: none;
+				}
+			}
+			p {
+				margin: 0;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 1200px) {
+			.tm_pb_pricing_table_button {
+				@include font-size(0.75);
+			}
+		}
+	}
+}

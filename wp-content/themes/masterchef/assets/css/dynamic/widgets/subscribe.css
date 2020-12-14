@@ -1,0 +1,45 @@
+#sidebar    .subscribe-block {
+	background-color: @darken($invert_accent_color_1, 5);
+}
+.subscribe-block input[type="email"] {
+	background: $regular_accent_color_3;
+}
+#sidebar .subscribe-block__submit {
+	 color: $regular_text_color;
+	 border-bottom-color: $regular_text_color;
+	 background: none;
+	 text-transform: none;
+ }
+#sidebar .subscribe-block__submit:hover {
+	color: $regular_text_color;
+}
+.widget-subscribe .subscribe-block__submit {
+	 color: $regular_accent_color_3;
+	 border-bottom-color: $regular_accent_color_3;
+	 background: none;
+	 text-transform: none;
+ }
+.widget-subscribe .subscribe-block__submit:hover {
+	color: $regular_accent_color_3;
+}
+
+.follow-block {
+	background-color: $invert_accent_color_1;
+}
+.follow-block .menu-item a {
+	color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+.follow-block .menu-item a:hover {
+	color: $regular_accent_color_3;
+	background-color: $regular_accent_color_2;
+}
+.footer-area-wrap .follow-block .menu-item a {
+	color: $regular_accent_color_3;
+	border-color: $regular_accent_color_3;
+}
+.footer-area-wrap .follow-block .menu-item a:hover {
+	color: $regular_link_color;
+	background-color: transparent;
+	border-color: $regular_link_color;
+}

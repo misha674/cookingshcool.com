@@ -1,0 +1,131 @@
+#tm_builder_outer_content {
+	.tm_pb_testimonial {
+	  	text-align: center;
+		overflow: hidden;
+		margin-left: -10px;
+		margin-right: -10px;
+		padding: 30px 20px;
+		@include media-breakpoint-up(sm) {
+			margin-left: 0;
+			margin-right: 0;
+			padding: 0px 250px 50px;
+			padding: 30px 20px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding: 0px 250px 50px;
+		}
+
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&:before {
+			display: none !important;
+		}
+		.tm_pb_testimonial_portrait {
+			display: block;
+			margin: 0 auto 15px;
+    		float: none;
+
+			&:before {
+			  border-radius: unset !important;
+			  content: " ";
+			  position: absolute;
+			  top: 100px;
+			  left: -90px;
+			  width: 52px;
+			  height: 4px;
+			}
+			&:after {
+			  content: " ";
+			  position: absolute;
+			  top: 100px;
+			  right: -90px;
+			  width: 52px;
+			  height: 4px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin: 0 auto;
+				float: none;
+			}
+			@include media-breakpoint-up(xl) {
+				margin: 0 auto;
+			}
+		}
+		.tm_pb_testimonial_description {
+    		padding: 5px 0;
+
+			&:after {
+			  content: " ";
+			  position: absolute;
+			  bottom: 30px;
+			  left: 48%;
+			  @media (min-width: 360px) {
+				left: 41%;
+			  }
+			  @media (min-width: 768px) {
+				left: 44%;
+			  }
+			  @media (min-width: 980px) {
+				left: 45%;
+			  }
+			  @media (min-width: 1280px) {
+				left: 47%;
+			  }
+			  @media (min-width: 1920px) {
+				left: 48%;
+			  }
+			  width: 56px;
+			  height: 4px;
+			  background-color: $black_171717;
+			}
+
+			@include media-breakpoint-up(lg) {
+			}
+			.tm_pb_testimonial_quote_icon {
+				margin-bottom: 0.5em;
+			  	text-align: center;
+
+				&:before {
+					content: attr(data-icon);
+					@include font-awesome-icon();
+					font-size: 36px;
+				}
+			}
+			.tm_pb_testimonial_description_inner {
+			    padding: 10px 20px 0;
+			    text-align: center;
+			    margin: 0; 
+    			width: auto !important;
+				@include media-breakpoint-up(lg) {
+			    	padding: 0;
+					width: auto !important;
+					margin: 0;
+    				text-align: left;
+				}
+			}
+			.tm_pb_builder & .tm_pb_testimonial_author {
+				margin-top: 0.8em;
+			  	margin-bottom: 0.5em;
+				@include font-size(0.75);
+				text-align: center;
+
+				@include media-breakpoint-up(sm) {
+					@include font-size(1);
+					text-align: center;
+				}
+				@include media-breakpoint-up(lg) {
+					@include font-size(2.25);
+					text-align: center;
+				}
+			}
+			p{
+				margin-bottom: 1em;
+				text-transform: uppercase;
+
+			}
+		}
+	}
+}

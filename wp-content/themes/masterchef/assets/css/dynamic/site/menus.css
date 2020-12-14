@@ -1,0 +1,78 @@
+/* #Main Menu */
+.main-navigation li a {
+	font-style: $main_menu_font_style;
+	font-weight: $main_menu_font_weight;
+	font-size: $main_menu_font_size{px};
+	line-height: $main_menu_line_height;
+	font-family: @font_family( $main_menu_font_family );
+	letter-spacing: $main_menu_letter_spacing{px};
+	color: $header_text_color;
+}
+.main-navigation .menu > li > a:hover,
+.main-navigation .menu > li.menu-hover > a,
+.main-navigation .menu > li.current_page_item > a,
+.main-navigation .menu > li.current_page_ancestor > a,
+.main-navigation .menu > li.current-menu-item > a,
+.main-navigation .menu > li.current-menu-ancestor > a {
+	color: $header_text_color;
+}
+
+.main-navigation .sub-menu li {
+	border-color: @lighten( $regular_accent_color_3, 30 );
+	background-color: $top_panel_bg;
+}
+.main-navigation .sub-menu > li > a:hover,
+.main-navigation .sub-menu > li.menu-hover > a,
+.main-navigation .sub-menu > li.current_page_item > a,
+.main-navigation .sub-menu > li.current_page_ancestor > a,
+.main-navigation .sub-menu > li.current-menu-item > a,
+.main-navigation .sub-menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+.main-navigation .sub-menu li.menu-item-has-children::after{
+	color: $regular_accent_color_3;
+}
+.menu-item__desc {
+	font-style: $body_font_style;
+	font-family: @font_family( $body_font_family );
+	color: $regular_text_color;
+}
+
+.menu-toggle {
+	font-style: $main_menu_font_style;
+	font-weight: $main_menu_font_weight;
+	font-family: @font_family( $main_menu_font_family );
+	color: $header_text_color;
+}
+
+.stuckMenu.isStuck {
+	background-color: $header_bg_color;
+}
+
+@media screen and (max-width: 767px) {
+	.main-navigation .menu .menu-item,
+	.main-navigation .menu .menu-item .sub-menu {
+		border-color: $header_text_color;
+	}
+	.main-navigation .menu .menu-item .sub-menu span,
+ 	.main-navigation .menu .menu-item .sub-menu-toggle{
+  		color:$header_text_color;
+ 	}
+	.main-navigation .menu .menu-item .sub-menu .menu-item,
+	.main-navigation .menu .menu-item .sub-menu .sub-menu {
+		border-color: @alpha($header_text_color,10);
+	}
+}
+
+/* #Footer Menu */
+.footer-menu:before {
+	background-color: $invert_accent_color_3;
+}
+.footer-menu__items li a,
+.footer-menu ul li::before {
+	color: $invert_accent_color_3;
+}
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a {
+	color: $invert_accent_color_3;
+}

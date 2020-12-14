@@ -1,0 +1,49 @@
+.site-footer.centered {
+	text-align: center;
+  	.footer-area-wrap {
+	  .widget-area.row {
+		padding-top: 4.3em;
+		display: block;
+
+		aside {
+		  display: inline;
+		  max-width: 100%;
+		  flex: unset;
+
+		  .widget-about__logo {
+			margin-bottom: 0;
+		  }
+
+		  ul {
+		  	li{
+			  display: inline;
+			  margin-right: 50px;
+			}
+		  }
+		}
+	  }
+	  .social-list--footer {
+		float: none;
+		padding-bottom: 41px;
+		li {
+		  background: #fff;
+		  &:hover {
+			background: #6c6c6c;
+		  }
+		  padding-top: 5px;
+		  height: 28px;
+		  width: 28px;
+		  border-radius: 50%;
+		  a {
+			color: $social_link;
+		  }
+		}
+
+		.footer-container {
+		 	.footer-navigation {
+
+			}
+		}
+	  }
+	}
+}

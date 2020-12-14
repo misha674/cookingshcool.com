@@ -1,0 +1,281 @@
+@import "variables";
+
+.card {
+	display: block;
+	@include word-wrap;
+}
+
+
+//
+// Grid layout
+//
+
+@include media-breakpoint-up(md) {
+	.card-deck {
+		display: flex;
+		margin-right: -$card-deck-margin / 2;
+		margin-left: -$card-deck-margin / 2;
+		flex-flow: row wrap;
+
+		@include media-breakpoint-up(md) {
+			margin-right: -$card-deck-margin-md / 2;
+			margin-left: -$card-deck-margin-md / 2;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-right: -$card-deck-margin-lg / 2;
+			margin-left: -$card-deck-margin-lg / 2;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-right: -$card-deck-margin-xl / 2;
+			margin-left: -$card-deck-margin-xl / 2;
+		}
+
+		.card {
+			margin-right: $card-deck-margin / 2;
+			margin-left: $card-deck-margin / 2;
+			flex: 1 0 0;
+			display: flex;
+			flex-direction: column;
+
+			@include media-breakpoint-up(md) {
+				margin-right: $card-deck-margin-md / 2;
+				margin-left: $card-deck-margin-md / 2;
+			}
+			@include media-breakpoint-up(lg) {
+				margin-right: $card-deck-margin-lg / 2;
+				margin-left: $card-deck-margin-lg / 2;
+			}
+			@include media-breakpoint-up(xl) {
+				margin-right: $card-deck-margin-xl / 2;
+				margin-left: $card-deck-margin-xl / 2;
+			}
+
+			-webkit-display: flex;
+			-webkit-flex-direction: column;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+			&.sticky {
+				.home & {
+					display: block;
+					max-width: calc(100% - #{$card-deck-margin});
+					flex: none;
+
+					@include media-breakpoint-up(md) {
+						max-width: calc(100% - #{$card-deck-margin-md});
+					}
+					@include media-breakpoint-up(lg) {
+						max-width: calc(100% - #{$card-deck-margin-lg});
+					}
+					@include media-breakpoint-up(xl) {
+						max-width: calc(100% - #{$card-deck-margin-xl});
+					}
+				}
+			}
+		}
+	}
+	.posts-list {
+		&--grid-2-cols {
+			.card {
+				max-width: calc(100%/2 - #{$card-deck-margin});
+				flex: 1 0 calc(100%/2 - #{$card-deck-margin});
+
+				@include media-breakpoint-up(md) {
+					max-width: calc(100%/2 - #{$card-deck-margin-md});
+					flex: 1 0 calc(100%/2 - #{$card-deck-margin-md});
+				}
+				@include media-breakpoint-up(lg) {
+					max-width: calc(100%/2 - #{$card-deck-margin-lg});
+					flex: 1 0 calc(100%/2 - #{$card-deck-margin-lg});
+				}
+				@include media-breakpoint-up(xl) {
+					max-width: calc(100%/2 - #{$card-deck-margin-xl});
+					flex: 1 0 calc(100%/2 - #{$card-deck-margin-xl});
+				}
+			}
+		}
+		&--grid-3-cols {
+			.card {
+				max-width: calc(100%/3 - #{$card-deck-margin});
+				flex: 1 0 calc(100%/3 - #{$card-deck-margin});
+
+				@include media-breakpoint-up(md) {
+					max-width: calc(100%/3 - #{$card-deck-margin-md});
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin-md});
+				}
+				@include media-breakpoint-up(lg) {
+					max-width: calc(100%/3 - #{$card-deck-margin-lg});
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin-lg});
+				}
+				@include media-breakpoint-up(xl) {
+					max-width: calc(100%/3 - #{$card-deck-margin-xl});
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin-xl});
+				}
+			}
+		}
+	}
+}
+
+
+//
+// Masonry layout
+//
+
+@include media-breakpoint-up(md) {
+	.card-columns {
+		column-gap: $card-deck-margin;
+
+		@include media-breakpoint-up(md) {
+			column-gap: $card-deck-margin-md;
+		}
+		@include media-breakpoint-up(lg) {
+			column-gap: $card-deck-margin-lg;
+		}
+		@include media-breakpoint-up(xl) {
+			column-gap: $card-deck-margin-xl;
+		}
+		.card {
+			display: inline-block;
+			width: 100%; // Don't let them exceed the column width
+		}
+	}
+	.posts-list--masonry-2-cols {
+		column-count: 2;
+	}
+	.posts-list--masonry-3-cols {
+		column-count: 3;
+	}
+}
+
+//
+// Vertical Justify layout
+//
+
+@include media-breakpoint-up(md) {
+	.posts-list {
+		&--vertical-justify {
+			display: flex;
+			margin-right: -$card-deck-margin / 2;
+			margin-left: -$card-deck-margin / 2;
+			flex-flow: row wrap;
+
+			@include media-breakpoint-up(md) {
+				margin-right: -$card-deck-margin-md / 2;
+				margin-left: -$card-deck-margin-md / 2;
+			}
+			@include media-breakpoint-up(lg) {
+				margin-right: -$card-deck-margin-lg / 2;
+				margin-left: -$card-deck-margin-lg / 2;
+			}
+			@include media-breakpoint-up(xl) {
+				margin-right: -$card-deck-margin-xl / 2;
+				margin-left: -$card-deck-margin-xl / 2;
+			}
+
+			.card {
+				flex: 1 0 calc(100%/3 - #{$card-deck-margin});
+				max-width: calc(100%/3 - #{$card-deck-margin});
+				margin-right: $card-deck-margin / 2;
+				margin-left: $card-deck-margin / 2;
+
+				@include media-breakpoint-up(md) {
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin-md});
+					max-width: calc(100%/3 - #{$card-deck-margin-md});
+					margin-right: $card-deck-margin-md / 2;
+					margin-left: $card-deck-margin-md / 2;
+				}
+				@include media-breakpoint-up(lg) {
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin-lg});
+					max-width: calc(100%/3 - #{$card-deck-margin-lg});
+					margin-right: $card-deck-margin-lg / 2;
+					margin-left: $card-deck-margin-lg / 2;
+				}
+				@include media-breakpoint-up(xl) {
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin-xl});
+					max-width: calc(100%/3 - #{$card-deck-margin-xl});
+					margin-right: $card-deck-margin-xl / 2;
+					margin-left: $card-deck-margin-xl / 2;
+				}
+
+				&:nth-child(7n + 1),
+				&:nth-child(7n + 4) {
+					flex: 1 0 calc(100%/1.5 - #{$card-deck-margin});
+					max-width: calc(100%/1.5 - #{$card-deck-margin});
+
+					@include media-breakpoint-up(md) {
+						max-width: calc(100%/1.5 - #{$card-deck-margin-md});
+						flex: 1 0 calc(100%/1.5 - #{$card-deck-margin-md});
+					}
+					@include media-breakpoint-up(lg) {
+						max-width: calc(100%/1.5 - #{$card-deck-margin-lg});
+						flex: 1 0 calc(100%/1.5 - #{$card-deck-margin-lg});
+					}
+					@include media-breakpoint-up(xl) {
+						max-width: calc(100%/1.5 - #{$card-deck-margin-xl});
+						flex: 1 0 calc(100%/1.5 - #{$card-deck-margin-xl});
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//
+// Reset (when two sidebars)
+//
+
+@include media-breakpoint-up(md) {
+	.card-deck {
+		&.two-sidebars {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			.card {
+				display: block;
+				max-width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+				flex: none;
+			}
+		}
+	}
+	.card-columns {
+		&.two-sidebars {
+			column-gap: normal;
+			column-count: auto;
+			.card {
+				display: block;
+			}
+		}
+	}
+}
+
+
+//
+// Reset (for tablet)
+//
+
+@include media-breakpoint-only(md) {
+	.posts-list--grid-3-cols {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		.card {
+			display: block;
+			max-width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			flex: none;
+		}
+	}
+	.posts-list--masonry-3-cols {
+		&.one-left-sidebar,
+		&.one-right-sidebar {
+			column-gap: normal;
+			column-count: auto;
+			.card {
+				display: block;
+			}
+		}
+	}
+}

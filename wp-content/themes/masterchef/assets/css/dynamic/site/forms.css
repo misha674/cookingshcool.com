@@ -1,0 +1,80 @@
+/* #Search Form */
+.search-form .search-form__submit:hover {
+	color: $regular_accent_color_2;
+	background-color: $regular_accent_color_3;
+}
+
+.top-panel .search-form__field {
+	background: none;
+}
+.top-panel .search-form__submit {
+}
+.top-panel .search-form__submit:hover {
+	color: $invert_link_hover_color;
+	background:transparent;
+}
+
+/* #Comment, Contact, Password Forms */
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input {
+	color: $regular_accent_color_3;
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.comment-form .submit:hover,
+.wpcf7-submit:hover,
+.post-password-form label + input:hover {
+	color: $regular_accent_color_2;
+	background-color: $regular_accent_color_3;
+	border-color: $regular_accent_color_2;
+}
+
+.comment-form label > span {
+	color: $regular_accent_color_1;
+}
+.comment-form .logged-in-as a:hover {
+	color: $regular_text_color;
+}
+
+.comments-title {
+	background-color: @lighten($invert_accent_color_1, 2);
+}
+.comment-list .even > .comment-body {
+	background-color: $invert_accent_color_1;
+}
+.comment-list .odd > .comment-body {
+	background-color: @lighten($invert_accent_color_1, 1);
+}
+.comment .comment-metadata .fn {
+	color: $regular_accent_color_1;
+}
+
+/* #Comment respond */
+.comment-respond {
+	background-color: $invert_accent_color_1;
+}
+.comment-reply-title{
+	color: $regular_text_color;
+}
+
+/* #Comment Reply Link */
+.comment-reply-link {
+	color: $regular_h6_color;
+}
+.single .site-main .comment-reply-link:hover {
+	color: $regular_link_color;
+}
+
+#cancel-comment-reply-link {
+	color: $regular_link_color;
+}
+#cancel-comment-reply-link:hover {
+	color: $regular_link_hover_color;
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: $regular_text_color; }
+::-moz-placeholder          { color: $regular_text_color; }
+:-moz-placeholder           { color: $regular_text_color; }
+:-ms-input-placeholder      { color: $regular_text_color; }

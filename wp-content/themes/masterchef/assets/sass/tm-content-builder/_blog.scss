@@ -1,0 +1,145 @@
+#tm_builder_outer_content {
+	.tm_pb_blog_grid_wrapper {
+		margin: 0;
+
+		>div {
+			padding: 30px;
+		}
+		.tm_pb_post {
+			&:hover {
+				.tm_pb_post__grid {
+					&:before {
+						opacity: .35;
+					}
+				}
+			}
+		}
+		.tm_pb_post__grid {
+			margin-left: -10px;
+			margin-right: -10px;
+
+			@include media-breakpoint-up(sm) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			position: relative;
+			z-index: 1;
+
+		}
+	}
+	.tm_pb_blog_grid_wrapper {
+		.tm_pb_post {
+		  	margin-bottom: 0;
+		}
+		h3.entry-title{
+			text-transform: none;
+		    margin-bottom: 9px;
+		    margin-top: 12px;
+		    line-height: 1.3em;
+		}
+		.tm_pb_image_container {
+		    margin-bottom: 22px;
+		    a{
+		    	position: relative;
+		    	overflow: hidden;
+
+				img{
+					width: 100%;
+					@media (min-width: 1500px) {
+					  	min-height: 316px;
+					}
+					background: rgba(44,48,58, 1);
+					opacity: 0.8;
+					@include transition(all 0.5s ease);
+				}
+
+				&:hover {
+	
+						img{
+							width: 100%;
+							opacity: 1;
+							@include transition(all 0.5s ease);
+						}
+					}
+				
+			}
+		
+		}
+		.content_blog_wrapp {
+			 padding: 0 50px 80px 50px;
+		     text-align: center;
+		  	 position: relative;
+		  	.more-link{
+			  &:hover {
+				i {
+				  right: -20px;
+				  @include transition(all 0.3s ease);
+				}
+			  }
+			  i {
+				position: absolute;
+				top: 19px;
+				right: -5px;
+			  }
+			}
+		}
+		.more-link{
+    		margin-top: 60px;
+		  	position: absolute;
+		  	bottom: 0;
+		  	left: 37%;
+			@media (max-width: 1280px) {
+			  left: 31%;
+			}
+		  	@media (max-width: 980px) {
+			  left: 27%;
+			}
+		  	@media (max-width: 320px) {
+			  left: 22%;
+			}
+		  	border-bottom: 4px solid;
+		}
+		.tm_pb_post_content{
+			margin-bottom: 31px;
+		}
+		.tm_pb_post_meta{
+    		padding: 6px 0 0 0;
+			position: relative;
+			.published{
+				display: inline-block;
+				@include font-size(0.9375);
+			}
+			.author.vcard{
+    			padding-right: 13px;
+    			margin-right: 10px;
+    			position: relative;
+				@include font-size(0.9375);
+			}
+			.author.vcard, 
+			.comments{
+				@include font-size(0.9375);
+			}
+			span { 
+				@include font-size(0.9375);
+			}
+		}
+
+	}
+}
+.tm_pb_post_meta{
+	span{
+		color: $post_meta;
+	}
+}
+#tm_builder_outer_content .tm_pb_blog .tm_pb_post .tm_pb_post_meta span .author a {
+	color: $post__meta_author;
+	font-style: $font__italic;
+	@include font-size(17/16);
+}
+.tm_pb_post_meta span{
+	@include font-size(17/16);
+}
+.tm_pb_post_meta span.published{
+	@include font-size(17/16);
+}

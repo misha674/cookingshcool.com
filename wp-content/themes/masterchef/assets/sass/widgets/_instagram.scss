@@ -1,0 +1,63 @@
+.instagram {
+	&__items {
+		overflow: hidden;
+	}
+	&__item, #tm_builder_outer_content .tm_pb_widget_area &__item {
+		position: relative;
+		float: left;
+		padding: 0;
+
+		max-width: 50%;
+
+		@include media-breakpoint-up(md) {
+			max-width: 33.3%;
+		}
+		@include media-breakpoint-up(lg) {
+			max-width: 20%;
+		}
+	}
+	&__link {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		&:hover {
+			.instagram__cover {
+				opacity: 1;
+			}
+		}
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+	&__cover {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		color: #5a524e;
+		opacity: 0;
+		text-align: center;
+		transition: all .25s ease-out;
+		&:before {
+			content: '\f16d';
+			@include font-awesome-icon;
+			position: absolute;
+		  	border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			font-size: 1.5em;
+		  	padding: 8px 10px;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.widget-instagram {
+	.full-width-header-area &,
+	.after-content-full-width-area & {
+		padding: 0 4px;
+	}
+}

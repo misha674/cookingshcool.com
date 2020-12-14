@@ -1,0 +1,11 @@
+#tm_builder_outer_content {
+	.tm_pb_social_media_follow {
+		.tm_pb_social_icon a {
+			@include font-size(0.75);
+			border: 2px solid;
+			width: 27px;
+			height: 27px;
+			margin-right: 5px;
+		}
+	}
+}

@@ -1,0 +1,158 @@
+.widget {
+
+}
+
+/*--------------------------------------------------------------
+## Widget Calendar
+--------------------------------------------------------------*/
+.widget_calendar {
+	.calendar_wrap {
+		padding: 0 20px;
+		border-top: none;
+	}
+	table {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	caption {
+		padding: 0.625em;
+		margin: 0 -22px 0 -21px;
+
+		@include border-radius;
+		@include font-size(1);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	th, tbody td {
+		padding: 4px 4px 3px;
+		width: 14%;
+		height: 24px;
+		line-height: 22px;
+	}
+	thead {
+		@include font-size(0.75);
+
+		th {
+			padding-top: 5.7%;
+		}
+	}
+	tbody {
+		padding-bottom: 5%;
+		@include font-size(0.75);
+
+		tr:last-child {
+			td {
+				padding-bottom: 5%;
+			}
+		}
+		td {
+			a {
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				border: 1px solid #979797;
+			}
+		}
+	}
+	tfoot {
+		border-top: 1px solid $color__background-hr;
+		text-align: left;
+
+		td {
+			padding: 2.5% 0 4.35%;
+			a {
+				@include font-size(0.875);
+				text-transform: uppercase;
+			}
+		}
+	}
+	#next {
+		text-align: right;
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Tag Cloud
+--------------------------------------------------------------*/
+.tagcloud {
+	a {
+		display: inline-block;
+		margin: 0 20px 6px 0;
+		font-size: 18px !important;
+		font-style: italic;
+		text-decoration: none;
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Posts
+--------------------------------------------------------------*/
+.widget_recent_entries {
+	ul {
+		margin: 0;
+		li {
+			@include font-size(0.9375);
+			list-style: none;
+			margin-left: 0;
+			margin-bottom: 27px;
+
+			display: flex;
+			flex-direction: column-reverse;
+
+			.post-date {
+				display: block;
+				margin-bottom: 10px;
+			}
+			a {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Comments
+--------------------------------------------------------------*/
+.widget_recent_comments {
+	ul {
+		margin: 0;
+		li {
+			@include font-size(0.9375);
+			font-style: italic;
+			list-style: none;
+			margin-left: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+
+			.comment-author-link {
+				font-style: normal;
+			}
+
+			a {
+				text-transform: uppercase;
+
+				&:before {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 8px;
+				}
+			}
+			&::before {
+				display: none;
+			}
+			& + li {
+				margin-top: 1.65em;
+			}
+		}
+	}
+}
+
+
+.site-content {
+	.widget_recent_entries a, .widget_recent_comments .recentcomments a {
+		@media (max-width: 992px) {
+			font-size: 13px;
+		}
+	}
+}
